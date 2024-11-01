@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    transition: 0.3s;
-    overflow-x: hidden;
+    transition: 0.2s;
 }
 /* ------Adding downloaded fonts to use in the Css ------*/
 @font-face {
@@ -171,7 +170,7 @@ header>nav>ul>a{
 #quotes{
     
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     font-family: Alata;
     color: navy;
     font-weight: bold;
