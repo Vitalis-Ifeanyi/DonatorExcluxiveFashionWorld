@@ -1,0 +1,328 @@
+/* ------Universal Styler ------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    transition: 0.3s;
+}
+/* ------Adding downloaded fonts to use in the Css ------*/
+@font-face {
+    font-family: Alata;
+    src: url(/fonts/Alata-Regular.ttf);
+}
+@font-face {
+    font-family: Josefin;
+    src: url(/fonts/static/JosefinSans-Regular.ttf);
+}
+/* ------Styling for the Header portion of the HTML starts------*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 200px;
+    background-image: url(/images/orangenavy\ background.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* ------ The Navigation portion of the Header ------*/
+header>nav{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+/* ------The Header logo and Company name Container ------*/
+header>nav>div{
+    width: 30vw;
+    border-radius: 3px;
+    transform: skew(-20deg);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    font-family: Josefin;
+    font-size: 14px;
+    line-height: 14px;
+    gap: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-block: 10px;
+}
+header>nav>div>h4{
+    font-size: 16px;
+    line-height: 20px;
+    transform: skew(20deg);
+
+    a{
+        color:navy;
+        text-decoration: none;
+    }
+
+}
+/* ------The top logo ------*/
+header>nav>div>img{
+    transform: skew(20deg);
+    border-radius: 50%;
+}
+/* ------ Theme Button ------*/
+#lighttheme{
+    border: none;
+    transform: skew(20deg);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+/* ------ Navigation List ------*/
+header>nav>ul{
+    padding: 20px 25px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 3px;
+    transform: skew(-20deg);
+    background-color:#f26c28;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+/* ------ Navigation  Link List ------*/
+header>nav>ul>a{
+    text-decoration: none;
+    transform: skew(20deg);
+    color:navy;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Alata;
+
+    :hover{
+        font-size: 20px;
+        color: whitesmoke;
+    }
+}
+/* ------ Mobile View Navigation Tool ------*/
+#hamburger{
+    display: none;
+}
+.topnav{
+  overflow: hidden;
+  background-color: rgb(2, 2, 36);
+  position: relative;
+  
+}
+#menulinks a{
+  text-align: center;
+  color: white;
+  width: 200px;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  list-style-type: none;
+  font-family: Alata;
+
+  :hover{
+      color: #f26c28;
+      background-color: white;
+  }
+}
+#menulinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  height: 0px;
+  transition: all 0.5s;
+}
+section{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 7px;
+    color: hsla(0, 0%, 70%, 0.2);
+    font-family: Alata;
+}
+/* ------ Footer Styling ------*/
+
+footer{
+    background-image: url(/images/wp11226156-gray-colour-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 15px;
+
+}
+footer>div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 10px;
+    padding-top: 20px;
+    color: white;
+    font-family: Alata;
+
+    img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    }
+}
+footer>div>p{
+    width: 50vw;
+    text-align: center;
+    font-family: Josefin;
+}
+footer>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 50px;
+}
+footer>div:nth-child(2)>ul{
+    padding: 20px 25px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.5s;
+    a{
+        text-decoration: none;
+        font-family: Alata;
+        color: white;
+        font-size: 16px;
+
+        :hover{
+            color: #f26c28;
+            font-size: 18px;
+        }
+    }
+}
+footer>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding: 10px 10px 0px 10px;
+    background-color: white;
+
+    a{
+        transition: 0.4s;
+        :hover{
+        width: 28px;
+        }
+    }   
+}
+footer>h3{
+    text-align: center;
+    font-family:Josefin;
+    color: white;
+}
+footer>p{
+  color: white;
+  font-size: 10px;
+  font-family: Alata;
+  text-align: center;
+}
+
+/* ------ Footer Styling ends  ------*/
+
+@media (width<=950px) {
+    header {
+      border: 1px solid;
+      gap: 50px;
+      height: 150px;
+    }
+    header > nav {
+      width: 90vw;
+      justify-items: center;
+      gap: 40px;
+      padding: 0px;
+    }
+    header > nav > div {
+      width: 70vw;
+      margin-top: 20px;
+      transform: skew(0deg);
+      gap: 7px;
+    }
+    header > nav > div > h4 {
+      font-size: 15px;
+      line-height: 18px;
+      transform: skew(0deg);
+    }
+    header > nav > div > img {
+      transform: skew(0deg);
+    }
+    #lighttheme {
+      transform: skew(0deg);
+    }
+    #hamburger {
+      display: block;
+    }
+    header > nav > ul {
+      display: none;
+    }
+    section {
+        font-size: 3em;
+    }
+    footer > div:first-child > h2 {
+      font-size: 1.2em;
+    }
+    footer > div > p {
+      width: 90vw;
+      font-size: 10px;
+      line-height: 13px;
+    }
+    footer > div:nth-child(2) {
+      flex-direction: column;
+      padding-inline: 50px;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    footer > div:nth-child(2) > ul {
+      padding: 2px 7px;
+      gap: 15px;
+  
+      img {
+        width: 20px;
+      }
+      a {
+        font-size: 9px;
+  
+        :hover {
+          color: #f26c28;
+          font-size: 11px;
+        }
+      }
+    }
+    footer > div:nth-child(2) > div {
+      gap: 20px;
+      padding: 5px 5px 0px 5px;
+  
+      a {
+        :hover {
+          width: 28px;
+        }
+      }
+    }
+    footer > h3 {
+      margin-block: 20px;
+      font-size: 0.7em;
+    }
+  }
+  
+  /* ------ First Mobile Responsiveness ends ------*/
+  

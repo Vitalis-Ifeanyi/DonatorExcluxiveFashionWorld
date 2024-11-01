@@ -1,0 +1,855 @@
+/* ------Universal Styler ------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    transition: 0.3s;
+}
+
+/* ------Adding downloaded fonts to use in the Css ------*/
+@font-face {
+    font-family: Alata;
+    src: url(/fonts/Alata-Regular.ttf);
+}
+
+/* ------Styling for the Header portion of the HTML starts------*/
+@font-face {
+    font-family: Josefin;
+    src: url(/fonts/static/JosefinSans-Regular.ttf);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    height: 150px;
+    background-image: url(/images/orangenavy\ background.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* ------ The Navigation portion of the Header ------*/
+header>nav{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+/* ------The Header logo and Company name Container ------*/
+header>nav>div{
+    width: 30vw;
+    border-radius: 3px;
+    transform: skew(-20deg);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    font-family: Josefin;
+    font-size: 14px;
+    line-height: 14px;
+    gap: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-block: 10px;
+}
+header>nav>div>h4{
+    font-size: 16px;
+    line-height: 20px;
+    transform: skew(20deg);
+    a{
+        color:navy;
+        text-decoration: none;
+    }
+
+}
+/* ------The top logo ------*/
+header>nav>div>img{
+    transform: skew(20deg);
+    border-radius: 50%;
+
+}
+/* ------ Theme Button ------*/
+#lighttheme{
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+/* ------ Navigation List ------*/
+header>nav>ul{
+    padding: 20px 25px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 3px;
+    transform: skew(-20deg);
+    background-color:#f26c28;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+/* ------ Navigation  Link List ------*/
+header>nav>ul>a{
+    text-decoration: none;
+    transform: skew(20deg);
+    color:navy;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Alata;
+
+    :hover{
+        font-size: 20px;
+        color: whitesmoke;
+    }
+}
+/* ------ Mobile View Navigation Tool ------*/
+#hamburger{
+    display: none;
+}
+.topnav{
+    overflow: hidden;
+    background-color: rgb(2, 2, 36);
+    position: relative;
+    
+}
+#menulinks a{
+    text-align: center;
+    color: white;
+    width: 200px;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    list-style-type: none;
+    font-family: Alata;
+
+    :hover{
+        color: #f26c28;
+        background-color: white;
+    }
+}
+#menulinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+/* ------ After Header Content with Brand Name ------*/
+.bigman{
+    border-radius: 10px;
+    border: 3px solid white;
+    background-image: url(/images/dunk.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 50px;
+    margin-inline: auto;
+    height: 400px;
+    width: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+    h2{
+        font-size: 4em;
+        color: navy;
+        font-family: Josefin;
+        font-weight: bold;
+        line-height: 70px;
+        width: 100px;
+        margin-left: 80px;
+    }
+}
+#quotes{
+    
+    text-align: center;
+    font-size: 16px;
+    font-family: Alata;
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+    height: 100px;
+}
+/* ------ Collection section starts------*/
+aside{
+    margin-block: 30px;
+    padding-left: 50px;
+}
+aside>h1{
+    font-family: Alata;
+    font-size: 2.5em;
+    line-height: 45px;
+    color:white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+aside>p{
+    font-family: Josefin;
+    font-weight: 300;
+    color:white;
+}
+/* ------ The Collections Heading ------*/
+#collection{
+    text-align: right;
+    margin-right: 50px;
+    position: relative;
+    top: 20px;
+    h1{
+        padding: 0px;
+        font-family: Josefin;
+        font-size: 5em;
+        font-weight: bolder;
+        letter-spacing: 4px;
+        position: relative;
+        top: 30px;
+        color: hsla(0, 0%, 70%, 0.3);
+    }
+    h2{
+        font-family: Alata;
+        font-size: 1.4em;
+        font-weight: bolder;
+        letter-spacing: 4px;
+        color: white;
+        position: relative;
+        bottom: 30px;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+    }
+}
+/* ------ Collection Grids ------*/
+article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+    padding-inline: 50px;
+    gap: 5px;
+
+    a{
+        text-decoration: none;
+    }
+}
+article>div{
+    height: 50vh;
+    margin-top: 10px;
+    overflow: hidden;
+}
+article>div:first-child{
+    border-top-left-radius: 30px;
+    display: flex;
+    background-image: url(/images/weloveshoes-donna.jpg);
+    background-position-x: center;
+    background-size: cover;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+article>div:first-child>h1{
+    border-top-left-radius: 30px;
+    font-family: Alata;
+    font-size: 5em;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+article>div:first-child>h1 a{
+    color: hsla(0, 0%, 70%, 0.5);
+}
+article>div:first-child>h2{
+    font-family: Alata;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-left: 20px;
+    position: relative;
+    right: 330px;
+
+    :hover{
+        font-size: 1.7em;
+    }
+}
+article>div:first-child>h2 a{
+      color: navy;
+      transition: all 0.3s;
+}
+article>div:nth-child(2){
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url(/images/weloveshoes-uomo.jpg);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+article>div:nth-child(2)>h1{
+    font-family: Alata;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-right: 10px;
+    z-index: 1;
+    position: relative;
+    left:180px;
+
+    :hover{
+        font-size: 1.7em;
+    }
+}
+
+article>div:nth-child(2)>h2 a{
+    color: hsla(0, 0%, 70%, 0.5);
+}
+article>div:nth-child(2)>h2{
+    font-family: Alata;
+    font-size: 5em;
+    letter-spacing: 4px;
+}
+article>div:nth-child(2)>h1 a{
+     color: navy;
+     transition: all 0.3s;
+}
+/* ------ Second Collection Grid ------*/
+main{
+    padding-inline: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+
+    a{
+        text-decoration: none;
+    }
+}
+main>div{
+    height: 40vh;
+    overflow: hidden;
+}
+main>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    background-image: url(/images/weloveshoes-bambini.jpg);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+main>div:nth-child(1)>h1{
+    font-family: Alata;
+    font-size: 5em;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+main>div:nth-child(1)>h1 a{
+    color: hsla(0, 0%, 70%, 0.5);
+}
+main>div:nth-child(1)>h2{
+    font-family: Alata;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-left: 20px;
+    position: relative;
+    right: 200px;
+
+    :hover{
+        font-size: 1.7em;
+    }
+}
+main>div:nth-child(1)>h2 a{
+    color: navy;
+    transition: all 0.3s;
+}
+main>div:nth-child(2){
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-image: url(/images/Screenshot_20241020-110539.jpg);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+main>div:nth-child(2)>a>button{
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    color: navy;
+    background-color: #f26c28;
+    font-family: Alata;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+main>div:nth-child(3){
+    display: flex;
+    align-items: start;
+    background-image: url(/images/weloveshoes-promo.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+main>div:nth-child(3)>h1{
+    font-family: Alata;
+    font-size: 4em;
+    letter-spacing: 4px;
+    margin-left: 20px;
+}
+main>div:nth-child(3)>h1 a{
+    color: hsla(0, 0%, 70%, 0.5);
+}
+main>div:nth-child(3)>h2{
+    font-family: Alata;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-left: 20px;
+    position: relative;
+    right:280px;
+    top: 25px;
+    a{
+        color: navy;
+        transition: all 0.3s;
+    }
+    
+    :hover{
+        font-size: 1.6em;
+    }
+}
+/* ------Collection Grid ends ------*/
+
+
+/* Animation to make the contents fade in as scroll */
+.content{
+    scale: .8;
+    opacity: 0;
+    animation: content linear forwards;
+    animation-timeline: view();
+    animation-range: 100px 250px;
+}
+@keyframes content{
+    to {scale: 1; opacity: 1;}
+}
+/* ------ Animation ends ------*/
+
+/* ------ Onsite Store Video Styling ------*/
+#videoshow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    height: 60vh;
+    padding-left: 50px;
+    padding-top: 100px;
+
+    button{
+        color: navy;
+        border: none;
+        padding: 5px 20px;
+        font-family: Alata;
+        width: 150px;
+        cursor: pointer;
+
+        :hover{
+            background-color: navy;
+            color: white;
+        }
+    }
+    a{
+        transition: all 0.3s;
+        :hover{
+            background-color: navy;
+            color: white;
+
+        }
+    }
+
+}
+#myVideo{
+    position: relative;
+    bottom: -79px;
+    width: 50%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.videocontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    bottom: 130px;
+    padding: 20px;
+    width: 44%;
+    color: white;
+    font-family: Josefin;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+/* ------ Video Styling ends ------*/
+
+/* ------ Moving Pictures in a roll ------*/
+marquee>img{
+    margin-top: 20px;
+    margin-inline: 10px;
+}
+
+/* ------ Footer Styling ------*/
+
+footer{
+    background-image: url(/images/wp11226156-gray-colour-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 15px;
+
+}
+footer>div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+    gap: 10px;
+    padding-top: 20px;
+    color: white;
+    font-family: Alata;
+
+    img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    }
+}
+footer>div>p{
+    width: 50vw;
+    text-align: center;
+    font-family: Josefin;
+}
+footer>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 50px;
+}
+footer>div:nth-child(2)>ul{
+    padding: 20px 25px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.5s;
+    a{
+        text-decoration: none;
+        font-family: Alata;
+        color: white;
+        font-size: 16px;
+
+        :hover{
+            color: #f26c28;
+            font-size: 18px;
+        }
+    }
+}
+footer>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding: 10px 10px 0px 10px;
+    background-color: white;
+
+    a{
+        transition: 0.4s;
+        :hover{
+        width: 28px;
+        }
+    }   
+}
+footer>h3{
+    text-align: center;
+    font-family:Josefin;
+    color: white;
+}
+footer>p{
+    color: white;
+    font-size: 10px;
+    font-family: Alata;
+    text-align: center;
+  }
+/* ------ Footer Styling ends  ------*/
+
+
+/* ------ Mobile Responsivenes Styling ------*/
+
+@media(width<=950px){
+    header{
+        border: 1px solid;
+        gap: 100px;
+    }
+    header>nav{
+        width: 90vw;
+        justify-items: center;
+        gap: 40px;
+        padding: 0px;
+    }
+    header>nav>div{
+        width: 70vw;
+        border: none;
+        margin-top: 20px;
+        transform: skew(0deg);
+        gap: 7px;
+    }
+    header>nav>div>h4{
+        font-size: 15px;
+        line-height: 18px;
+        transform: skew(0deg);
+    }
+    header>nav>div>img{
+        transform: skew(0deg);
+    }
+    #hamburger{
+        display: block;
+    }
+    header>nav>ul{
+        display: none;
+    }
+     .bigman{
+        height: 300px;
+        width: 90vw;
+    
+        h2{
+            font-size: 2em;
+            line-height: 40px;
+            width: 100px;
+            margin-left: 20px;
+        }
+    }
+    aside{
+        padding-left: 0px;
+        text-align: center;
+    }
+    aside>h1{
+        font-size: 1.2em;
+        line-height: 23px;
+        text-shadow: rgba(200, 200, 200, 0.5)
+    }
+    aside>p{
+        margin-top: 5px;
+        font-family: Josefin;
+
+    }
+    #collection{
+        text-align: center;
+        margin-right: 0px;
+        position: static;
+        h1{
+            display: none;
+        }
+        h2{
+            font-size: 0.9em;
+            position: static;
+        }
+    }  
+    article{
+        grid-template-columns: repeat(1,1fr);
+        padding-inline: 10px;
+        gap: 5px;
+    }
+    article>div{
+        height: 35vh;
+    }
+    article>div:first-child{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    article>div:first-child>h1{
+        font-size: 4em;
+        color: hsla(0, 0%, 70%, 0.6);
+    }
+    article>div:first-child>h2{
+        font-size: 1.3em;
+        font-weight: bolder;
+        position: relative;
+        right: 280px;
+    }
+    article>div:nth-child(2){
+        border-top-right-radius: 0px;
+    }
+    article>div:nth-child(2)>h1{
+        font-size: 1.3em;
+        left:150px;
+    }
+    article>div:nth-child(2)>h2{
+        font-size: 4em;
+        color: hsla(0, 0%, 70%, 0.6);
+    }
+    main{
+        padding-inline: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }
+    main>div{
+        height: 35vh;
+    }
+    main>div:nth-child(1){
+        border-bottom-left-radius: 0px;
+        margin-top: 10px;
+    }
+    main>div:nth-child(1)>h1{
+        font-size: 4em;
+        color: hsla(0, 0%, 70%, 0.6);
+    }
+    main>div:nth-child(1)>h2{
+        font-size: 1.3em;
+        position: relative;
+        right: 165px;
+    }
+    main>div:nth-child(3){
+        display: flex;
+        align-items: start;
+        background-image: url(/images/weloveshoes-promo.jpg);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    main>div:nth-child(3)>h1{
+        font-size: 3em;
+        color: hsla(0, 0%, 70%, 0.6);
+    
+    }
+    main>div:nth-child(3)>h2{
+        font-size: 1.2em;
+        position: relative;
+        right:220px;
+        top: 20px;
+    }
+    #videoshow{
+        height: 31vh;
+        padding-left: 0px;
+        padding-top:20px;
+    }
+    #myVideo{
+        position: relative;
+        bottom: -79px;
+        width: 90vw;
+        height:100%;
+    }
+    .videocontent{
+        position: relative;
+        bottom: 105px;
+        padding: 10px;
+        width: 90%;
+    }
+    footer>div:first-child>h2{
+        font-size: 1.2em;
+     }
+     footer>div>p{
+         width: 90vw;
+         font-size: 10px;
+         line-height: 13px;
+     }
+     footer>div:nth-child(2){
+         flex-direction: column;
+         padding-inline: 50px;
+         gap: 10px;
+         margin-top: 10px;
+     }
+     footer>div:nth-child(2)>ul{
+         padding: 2px 7px;
+         gap: 15px;
+ 
+         img{
+             width: 20px;
+         }
+         a{
+             font-size: 9px;
+     
+             :hover{
+                 color: #f26c28;
+                 font-size: 11px;
+             }
+         }
+     }
+     footer>div:nth-child(2)>div{
+         gap:20px;
+         padding: 5px 5px 0px 5px;
+     
+         a{
+             :hover{
+             width: 28px;
+             }
+         }   
+     }
+     footer>h3{
+         margin-block: 20px;
+         font-size: 0.7em;
+     }
+ 
+}
+
+/* ------ First Mobile Responsiveness ends ------*/
+
+/* ------ Second Mobile Responsiveness Starts ------*/
+@media(height<=400px){
+    header>nav{
+        gap: 70px;
+    }
+    article>div{
+        height: 70vh;
+    }
+    main>div{
+        height: 70vh;
+    }
+    #videoshow{
+        height: 70vh;
+        width: 95vw;
+        padding-left: 10px;
+        padding-top: 0px;
+        margin-top: 40px;
+    
+        button{
+            color: navy;
+            border: none;
+            padding: 5px 20px;
+            font-family: Alata;
+            width: 150px;
+        }
+    
+    }
+    #myVideo{
+        position: relative;
+        bottom: -79px;
+        width: 100%;
+        height:100%;
+        border-radius: 10px;
+    
+    }
+    .videocontent{
+        bottom: 125px;
+        padding: 10px;
+        width: 53%;
+        border-radius: 0px;
+    
+    
+    }
+}
+/* ------ Styling ends------*/
